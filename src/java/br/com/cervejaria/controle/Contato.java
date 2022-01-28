@@ -40,14 +40,14 @@ public class Contato extends HttpServlet {
             
             SimpleEmail simpleEmail = new SimpleEmail();
             simpleEmail.setHostName("smtp.gmail.com");
-            simpleEmail.addTo("jheniffercarolinateste@gmail.com");
-            simpleEmail.setFrom("jheniffercarolinateste@gmail.com");
+            simpleEmail.addTo("teste@gmail.com");
+            simpleEmail.setFrom("teste@gmail.com");
             simpleEmail.setSubject("Contato - Loja informatica");
             
             simpleEmail.setMsg("Nome: " + nome + "\n" + "Email: " + email + "\n"
             + "Mensagem:  " + mensagem);
             
-            simpleEmail.setAuthentication("jheniffercarolinateste@gmail.com", "teste12345jheniffer");
+            simpleEmail.setAuthentication("teste@gmail.com", "testesenha");
             simpleEmail.setSmtpPort(465);
             simpleEmail.setSSL(true);
             simpleEmail.setTLS(true);
